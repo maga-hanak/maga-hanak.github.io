@@ -1,0 +1,262 @@
+/*
+---------------------------------------------
+Índice
+------------------------------------------------
+1. Typography
+2. Main Nav
+3. Home
+4. About
+5. Work
+6. Single Work
+7. Pricing
+8. Contact
+--------------------------------------------- */
+
+html {font-family: 'Verdana', sans-serif;}
+/* Typography */
+p, a {font-weight: 400;}
+.h2 {font-size: 40px;}
+.h3 {font-size: 28px;}
+.light-300 {
+  font-family: 'Verdana', sans-serif !important;
+  font-weight: 300;
+}
+.regular-400 {
+  font-family: 'Verdana', sans-serif !important;
+  font-weight: 400;
+}
+.semi-bold-600 {
+  font-family: 'Verdana', sans-serif !important;
+  font-weight: 600;
+}
+.typo-space-line::after,
+.typo-space-line-center::after {
+  content: "";
+  width: 150px;
+  display:block;
+  position: absolute;
+  border-bottom:  5px solid #66B5F2;
+  padding-top: .5em;
+}
+.typo-space-line-center::after {
+  left: 50%;
+  margin-left: -75px;
+}
+/* Main Nav */
+#main_nav .nav-item .nav-link:hover {color:white;}
+
+.btn-outline-primary:hover{
+  background-color: #F2817E !important;
+
+}
+/* Home */
+.text-primary{
+  color: #F2817E !important;
+}
+.text-secondary{
+  color: #fbff0a !important;
+}
+.text-muted{
+  color: white  !important;
+}
+
+.h2 {
+  color: #F2817E !important;
+}
+#index_banner{
+  background-image: url('https://cdn.pixabay.com/photo/2014/05/02/23/46/bridge-336475_1280.jpg');
+  background-position: center center; background-size: cover; 
+  height: 100%;
+  min-height: 60vh;
+  width: 100%;
+}
+
+#index_banner .carousel-item {
+  min-height: 60vh;
+}
+#index_banner .carousel-control-prev i,
+#index_banner .carousel-control-next i {
+  color: #66B5F2 !important;
+  text-decoration: none;
+  font-size: 4em;
+}
+#index_banner .carousel-inner {
+  height: 80vh;
+}
+#index_banner .carousel-indicators li,
+#index_banner .carousel-indicators.active {
+  background-color: #66B5F2 !important;
+}
+.service-wrapper .service-footer {
+  max-width: 720px;
+}
+.service-work.card {
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+.service-work .service-work-vertical {
+	background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33.33%, rgba(255,255,255,1) 66.66%, rgba(255,255,255,0) 99.99%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover * {
+  color: #000;
+  border-color: #000;
+  transition: .5s;
+}
+.recent-work.card{
+  border-radius: 10px !important;
+  height: 100%;
+}
+.recent-work .recent-work-vertical {
+	background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgba(97,84,199,1) 66.666%, rgba(255,255,255,0) 99.999%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+  cursor: pointer;
+}
+.recent-work .recent-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.recent-work .recent-work-vertical:hover div.recent-work-content {
+  top: 50%;
+  margin-top: -2.5em;
+  position: absolute;
+}
+.recent-work .recent-work-vertical:hover * {
+  color: white;
+  transition: .5s;
+}
+/* About */
+#work_banner {
+  background-image: url('../img/img_magatravel/baner4.jpg');
+  background-position: center center; background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.text-muted-color {
+  color: black;
+}
+.progress {
+  height: 8px;
+}
+.objective-icon {
+  border-radius: 13px;
+  width: 8rem;
+}
+.partner-wap {
+  background-color:#dc3545 !important;
+  transition: 1s;
+  cursor: pointer;
+}
+.partner-wap:hover {
+  background-color: #dc3545 !important;
+}
+
+.bg-light {
+  background-color: #f3f3f3 !important;
+}
+.why-us {
+  background: rgb(173, 109, 149);
+  background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efeffd",endColorstr="#ffffff",GradientType=1);
+}
+.team-member-img {
+  transition-duration: 0.15s;
+}
+.team-member:hover .team-member-img {
+  padding: 10px !important;
+}
+.btn-secondary {
+  background-color: #3575A6 !important;
+}
+.light-300 {
+  text-align: justify;
+}
+.objective-heading.h3.mb-2.mb-sm-4.light-300 {
+  text-align: center;
+}
+
+/* Work */
+/* Singel Work */
+#work_single_banner {
+  background-image: url('../img/img_magatravel/baner4.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.related-content {
+  border-radius: 20px;
+  cursor: pointer;
+  }
+
+  .banner-heading.h2.display-3.pb-5.semi-bold-600.typo-space-line-center {
+    color: #fbff0a !important;
+  }
+
+  .h4.pb-2.regular-400 {
+    color:#fbff0a !important;
+  }
+
+  .h2-destinos {
+    color: #F2817E !important;
+    text-align: center !important;
+  }
+ 
+.btn.btn-secondary.text-white {
+  background-color: #F2817E !important;
+  border-color: #F2817E !important;
+}
+.feature-work-body.text-muted.light-300 {
+  color: #000 !important;
+}
+
+.letra-grande{
+  font-size: 60px;
+  font-weight: bold;
+}
+/* Pricing */
+.pricing-list {
+  margin-bottom: 1px;
+}
+.pricing-table {
+  max-width: 350px;
+  margin: auto;
+}
+.pricing-table,
+.pricing-horizontal {
+  border-radius: 15px !important;
+}
+/* Contact */
+#floatingtextarea {
+  height: 150px
+}
+
+.text2-decoration-none.text-light.py-1 {
+  color: #000 !important;
+}
+.light2-300 {color: #000 !important;}
+
+/* Footer */
+footer a.text-light:hover {
+  color: #bfbfbf !important;
+  transition-duration: 0.15s;
+}
+.bg-primary{
+  background-color: #3575A6 !important;
+}
+.bg-secondary{
+  background-color: #66B5F2 !important;
+}
+
